@@ -76,8 +76,6 @@ func genKey3(key []byte) []byte {
 }
 
 func main() {
-	// NewTripleDESCipher can also be used when EDE2 is required by
-	// duplicating the first 8 bytes of the 16-byte key.
 
 	t := flag.String("t", "<en/de>", "-t <en/de> 选择操作类型，加密还是解密")
 
@@ -127,15 +125,4 @@ func main() {
 		}
 
 	}
-
-	// key := genKey3("hello")
-	// 	info, _ := ioutil.ReadFile(*file)
-	// 	fmt.Println(info)
-	// 	dst := Encrypt3(key, info)
-	// 	ioutil.WriteFile("d:/go/mm",dst, 0777);
-	// 	ii,_ := ioutil.ReadFile("mm");
-	// 	fmt.Println(ii)
-	// 	fmt.Println(dst)
-	// 	src := Decrypt3(key, dst)
-	// 	fmt.Println(string(src))
 }
